@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-class Dice(val numberSides: Int) {
+private class Dice(val numberSides: Int) {
 
     fun roll(): Int {
         return (1..numberSides).random()
