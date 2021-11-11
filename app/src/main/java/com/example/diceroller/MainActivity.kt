@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
         val rollButton: Button = findViewById(R.id.button)
         rollButton.setOnClickListener {
             rollDice()
+            rollDice1()
         }
     }
 
@@ -20,6 +21,12 @@ class MainActivity : AppCompatActivity() {
         val diceRoll = dice.roll()
         val result: TextView = findViewById(R.id.textView)
         result.text = diceRoll.toString()
+    }
+    private fun rollDice1() {
+        val dice = Dice(6)
+        val diceRoll = dice.roll()
+        val result1: TextView = findViewById(R.id.textView2)
+        result1.text = diceRoll.toString()
     }
 }
 
